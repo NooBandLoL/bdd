@@ -25,3 +25,6 @@ When I click on all elements located `By.xpath(//button[@class="first-board-cont
 When I click on all elements located `By.xpath(//button[@class="first-board-continue-footer is-active"])`
 When I click on all elements located `By.xpath(//button[@class="first-board-continue-footer is-active submit-footer"])`
 
+Scenario: API creating board
+
+When I send HTTP POST to the relative URL '/1/boards' with content: '{"prefs_permissionLevel":"private","prefs_selfJoin":true,"prefs_background":"lime","creationMethod":"assisted","defaultLists":false,"name":"uuuusyuka","token":"5df8e168b15bab06a83c3bad/Yo22XTqa7uo1HZr1kK8T2erqtmRT0dQyVEpeU5jrGMi1DmgLZZLYVNCUHDCeFb39"}'
